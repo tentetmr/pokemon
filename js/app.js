@@ -149,7 +149,7 @@ $(".selectPlayerButton").on("click", function () {
 $(".selectPocchama").on("click", function () {
   playerData.name = "ポッチャマ";
   $(".playerMonster").append(
-    '<img src="/img/pocchama.png" alt="" class="monsterImage" />'
+    '<img src="https://tentetmr.github.io/pokemon/img/pocchama.png" alt="" class="monsterImage" />'
   );
   wazaNameInput("つつく", "ハイドロポンプ", "あわ", "ねむる");
   // 攻撃a
@@ -197,7 +197,7 @@ $(".selectPocchama").on("click", function () {
 $(".selectAchamo").on("click", function () {
   playerData.name = "アチャモ";
   $(".playerMonster").append(
-    '<img src="/img/achamo.png" alt="" class="monsterImage" />'
+    '<img src="https://tentetmr.github.io/pokemon/img/achamo.png" alt="" class="monsterImage" />'
   );
   wazaNameInput("ひっかく", "メガトンパンチ", "ひのこ", "あなをほる");
   // 攻撃a
