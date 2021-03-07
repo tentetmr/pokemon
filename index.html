@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/pokemon.css" />
+    <link rel="shortcut icon" href="#" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="field">
+      <!-- 画面上部 -->
+      <div class="battleField">
+        <!-- 敵エリア -->
+        <div class="enemyField">
+          <div class="hpGauge enemyHpGauge">
+            <div class="hpGaugeValue enemyHpGaugeValue"></div>
+          </div>
+
+          <div class="pikachu">
+            <img src="/img/pikachu.png" alt="" class="monsterImage" />
+          </div>
+        </div>
+        <!-- バトル開始ボタン -->
+        <div class="battleStart">
+          <img
+            src="/img/pocchama.png"
+            alt=""
+            class="monsterImage monsterSelect"
+          />
+          <img
+            src="/img/achamo.png"
+            alt=""
+            class="monsterImage monsterSelect"
+          />
+          <button class="selectPocchama selectPlayerButton">ポッチャマ</button>
+          <button class="selectAchamo selectPlayerButton">アチャモ</button>
+        </div>
+        <!-- プレイヤーエリア -->
+        <div class="playerField">
+          <div class="playerMonster"></div>
+          <div class="hpGauge playerHpGauge" id="currentPlayerHpGauge">
+            <div
+              class="hpGaugeValue playerHpGaugeValue"
+              id="currentPlayerHpValue"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 画面下部 -->
+      <div class="messageField">
+        <div class="message"></div>
+        <div class="waza">
+          <div class="wazaList">
+            <button class="a wazaButton"></button>
+            <button class="b wazaButton"></button>
+            <button class="c wazaButton"></button>
+            <button class="d wazaButton"></button>
+          </div>
+        </div>
+      </div>
+      <div class="retryWrap">
+        <button class="retryButton">リトライ</button>
+      </div>
+    </div>
+
+    <!-- 使用音源 -->
+    <div class="soundDirectory">
+      <audio constrols loop src="/sound/bgm.mp3" class="bgm"></audio>
+      <audio src="/sound/win.mp3" class="winner" preload="auto"></audio>
+      <audio src="/sound/lose.mp3" class="lose" preload="auto"></audio>
+      <audio src="/sound/attack.mp3" class="attack" preload="auto"></audio>
+      <audio src="/sound/enemyattack.mp3" class="enemyAttackSound"></audio>
+      <audio src="/sound/karaburi.mp3" class="karaburi"></audio>
+      <audio src="/sound/snore.mp3" class="snore"></audio>
+      <audio src="/sound/heal.mp3" class="heal"></audio>
+      <audio src="/sound/scoop.mp3" class="scoop"></audio>
+    </div>
+
+    <!-- JS jQueryの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
