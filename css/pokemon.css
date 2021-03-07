@@ -11,7 +11,7 @@ button:hover {
   width: 600px;
   height: 514px;
   border: none;
-  background: url(/img/startbutton.jpg) no-repeat center center;
+  background: url(https://tentetmr.github.io/pokemon/img/startbutton.jpg) no-repeat center center;
   background-size: cover;
 
   z-index: 10;
@@ -64,7 +64,7 @@ button:hover {
   width: 600px;
   height: auto;
   margin: 0 auto;
-  background: url(/img/sougen.jpg) no-repeat center center;
+  background: url(https://tentetmr.github.io/pokemon/img/sougen.jpg) no-repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
