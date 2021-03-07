@@ -1,0 +1,189 @@
+button {
+  outline: none;
+}
+button:hover {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.battleStart {
+  position: absolute;
+  width: 600px;
+  height: 514px;
+  border: none;
+  background: url(/img/startbutton.jpg) no-repeat center center;
+  background-size: cover;
+
+  z-index: 10;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.monsterSelect {
+  margin: 200px auto 0 auto;
+}
+.selectPlayerButton {
+  width: 250px;
+  height: 80px;
+  border-radius: 30px;
+  background: #fff;
+  letter-spacing: 1px;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0 auto 20px auto;
+}
+.selectPlayerButton:hover {
+  color: white;
+}
+.selectPlayerButton:active {
+  letter-spacing: 3px;
+}
+
+.selectPocchama {
+  border: 2px solid #5699f1;
+  color: #5699f1;
+}
+.selectPocchama:hover {
+  background: #5699f1;
+}
+.selectAchamo {
+  border: 2px solid #ec9a2d;
+  color: #ec9a2d;
+}
+.selectAchamo:hover {
+  background: #ec9a2d;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+.battleField {
+  border: 1px solid black;
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  background: url(/img/sougen.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.enemyField,
+.playerField {
+  display: flex;
+}
+
+.monsterImage {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.pikachu {
+  margin: 0 50px 0 auto;
+}
+.playerMonster {
+  margin: 0 auto 0 50px;
+}
+.purupuru {
+  animation: purupuru 0.1s infinite;
+}
+@keyframes purupuru {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(3px, 3px) rotateZ(1deg);
+  }
+}
+
+.hpGauge {
+  z-index: 0;
+  width: 300px;
+  height: auto;
+  border: 2px solid rgb(65, 62, 62);
+  background-color: #fff;
+  opacity: 0.9;
+}
+.enemyHpGauge {
+  margin: 20px auto auto 10px;
+}
+.playerHpGauge {
+  margin: auto 10px 20px auto;
+}
+.hpGaugeValue {
+  height: 7px;
+  background-color: rgb(0, 255, 0);
+}
+
+.messageField {
+  background-color: rgb(240, 240, 240);
+  border: 1px solid black;
+  width: 600px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+}
+.message,
+.waza {
+  background-color: rgb(245, 245, 241);
+  height: 90px;
+  margin: auto;
+  border: 2px dashed black;
+  border-radius: 5px;
+}
+.message {
+  font-size: 13px;
+  font-weight: bold;
+  width: 340px;
+}
+
+.waza {
+  width: 240px;
+  display: flex;
+}
+.wazaList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wazaButton {
+  font-size: 13px;
+  font-weight: bold;
+  width: 100px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.wazaButton:hover {
+  opacity: 0.5;
+}
+.wazaList.deactive {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.retryWrap {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+}
+.retryButton {
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+  border: 2px solid #fd4545;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  background: #fd4545;
+  margin: 3px 3px 0 auto;
+}
+.retryButton:hover {
+  background: #fff;
+  color: #fd4545;
+}
+.retryButton:active {
+  letter-spacing: 3px;
+}
