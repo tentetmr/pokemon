@@ -77,7 +77,7 @@ button:hover {
 .monsterImage {
   width: 200px;
   height: 200px;
-  object-fit: cover;
+  object-fit: contain;
 }
 .pikachu {
   margin: 0 50px 0 auto;
