@@ -60,7 +60,6 @@ button:hover {
   flex-direction: column;
 }
 .battleField {
-  border: 1px solid black;
   width: 600px;
   height: auto;
   margin: 0 auto;
@@ -118,7 +117,6 @@ button:hover {
 
 .messageField {
   background-color: rgb(240, 240, 240);
-  border: 1px solid black;
   width: 600px;
   height: 100px;
   margin: 0 auto;
